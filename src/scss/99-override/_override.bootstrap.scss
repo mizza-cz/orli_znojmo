@@ -16,5 +16,39 @@
   position: relative;
   text-transform: uppercase;
   font-weight: 800;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-dark {
+  background-color: var(--color-dark);
+  color: var(--color-light) !important;
+  text-decoration: none !important;
+}
+.bg-white {
+  background-color: var(--color-light);
+}
+
+.pl-5 {
+  padding-left: 20px;
+}
+.pl-10 {
+  padding-left: 40px;
+}
+.strong {
+  font-weight: 800;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.text-dark {
+  color: var(--color-dark) !important;
+}
+.fw-8 {
+  font-weight: 800 !important;
+}
+.bg-gray {
+  background-color: #f3f3f3;
 }
 /*! purgecss end ignore */

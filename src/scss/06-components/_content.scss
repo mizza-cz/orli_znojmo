@@ -10,6 +10,18 @@
   > :last-child {
     margin-bottom: 0;
   }
+  a {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    transition: text-decoration-color 0.3s;
+    color: inherit;
+    &:hover {
+      text-decoration-color: transparent;
+    }
+  }
+  p {
+    margin-bottom: 16px;
+  }
 }
 .h1 {
   font-size: 48px;
@@ -19,6 +31,7 @@
   @include media-breakpoint-down(md) {
     font-size: 36px;
     line-height: 125%;
+    letter-spacing: -0.36px;
   }
 }
 .h2,
@@ -31,5 +44,40 @@
   @include media-breakpoint-down(md) {
     font-size: 28px;
     line-height: 125%;
+    letter-spacing: -0.28px;
   }
+}
+.h3,
+.o-content h3 {
+  color: #ff102c;
+  font-size: 21px;
+  letter-spacing: -0.21px;
+  line-height: 16px;
+  font-weight: 800;
+}
+.h4 {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  line-height: 48px;
+}
+.h5 {
+  font-size: 16px;
+  letter-spacing: 0.02px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.p1 {
+}
+.p2 {
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  line-height: 19px;
+}
+.p3 {
+}
+.p4 {
+  font-size: 10px;
+  letter-spacing: -0.1px;
+  line-height: 12px;
 }
