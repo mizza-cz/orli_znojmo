@@ -1,0 +1,136 @@
+.page {
+  padding-top: 171px;
+  padding-bottom: 97px;
+  @include media-breakpoint-down(md) {
+    padding-bottom: 40px;
+  }
+  &__header {
+    position: relative;
+    z-index: 4;
+    padding-left: 60px;
+    padding-right: 32px;
+    @include media-breakpoint-down(md) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .h1 {
+      color: var(--color-light);
+    }
+    &-categ {
+      font-size: 16px;
+      letter-spacing: 0.07px;
+      line-height: 21px;
+      font-weight: 800;
+      color: var(--color-light);
+      text-transform: uppercase;
+      padding-left: 3px;
+      margin-bottom: 3px;
+    }
+  }
+}
+.team-section__menu {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: var(--color-light);
+}
+.menu-section__label {
+  width: fit-content;
+  display: block;
+  min-width: 440px;
+}
+.team-section__title {
+  margin-top: 51px;
+  padding-left: 65px;
+  background-color: var(--color-light);
+  border-radius: 12px;
+  min-height: 90px;
+  margin-bottom: 22px;
+  display: flex;
+  align-items: center;
+}
+.team-section__item {
+  display: flex;
+  padding: 18px;
+  background-color: var(--color-light);
+  text-decoration: none;
+  border-radius: 12px;
+  @media (max-width: 460px) {
+    flex-direction: column;
+  }
+  &-info {
+    padding-left: 12px;
+    @media (max-width: 460px) {
+      padding-left: 0;
+    }
+  }
+  &-num {
+    font-size: 96px;
+    letter-spacing: -4.8px;
+    line-height: 60%;
+    margin-bottom: 37px;
+    font-weight: 800;
+    color: var(--color-primary);
+    @media (max-width: 460px) {
+      font-size: 60px;
+      margin-bottom: 24px;
+    }
+  }
+  &-name {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+    line-height: 33px;
+    font-weight: 800;
+    margin-bottom: 2px;
+  }
+  &-img {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 6px;
+    @media (max-width: 460px) {
+      width: 100%;
+      height: auto;
+      margin-bottom: 16px;
+    }
+  }
+  &-flag {
+    width: 32px;
+    height: 20px;
+    padding-left: 8px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+  &-list {
+    display: flex;
+    align-items: center;
+    padding-left: 4px;
+    flex-wrap: wrap;
+    li + li {
+      padding-left: 24px;
+      position: relative;
+      &::before {
+        content: "|";
+        position: absolute;
+        left: 11px;
+        top: -1px;
+      }
+    }
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      letter-spacing: -0.14px;
+      line-height: 19px;
+      font-weight: 800;
+    }
+  }
+}
+.team-section {
+  margin-bottom: 120px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 51px;
+  }
+}

@@ -1,0 +1,24 @@
+.article-page {
+  padding-top: 120px;
+}
+.hp-page {
+  padding-top: 140px;
+  margin-bottom: 357px;
+}
+.top-section {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(39.84deg, #ff1a1a 0%, #ff0b37 100%);
+    opacity: 0.7;
+  }
+}

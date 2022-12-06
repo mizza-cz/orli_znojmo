@@ -5,7 +5,9 @@
 .bg-primary {
   background: var(--color-primary);
 }
-
+.text-gray {
+  color: var(--color-gray);
+}
 .btn {
   border-radius: 6px;
   font-size: 14px;
@@ -20,11 +22,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s;
 }
 .btn-dark {
   background-color: var(--color-dark);
   color: var(--color-light) !important;
   text-decoration: none !important;
+}
+.btn-light {
+  background-color: var(--color-light);
+  color: var(--color-primary);
+  &:hover {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
 }
 .bg-white {
   background-color: var(--color-light);
@@ -50,5 +61,9 @@
 }
 .bg-gray {
   background-color: #f3f3f3;
+}
+.border-r6 {
+  border-radius: 6px;
+  overflow: hidden;
 }
 /*! purgecss end ignore */
