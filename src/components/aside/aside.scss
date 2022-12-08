@@ -133,3 +133,19 @@
     }
   }
 }
+
+.aside-statistics {
+  padding: 0 50px;
+  &__title {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    background-color: #f3f3f3;
+  }
+  p {
+    color: var(--color-gray);
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 150%;
+  }
+}
