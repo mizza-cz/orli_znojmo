@@ -1,0 +1,199 @@
+.hp-infoboard {
+  padding-bottom: 86px;
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 40px;
+  }
+  &__btn {
+    position: absolute;
+    background-color: var(--color-light);
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.09);
+    width: 38px;
+    height: 38px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 34%;
+    cursor: pointer;
+    z-index: 10;
+    img {
+      width: 11px;
+      height: 19px;
+      object-fit: contain;
+    }
+  }
+  &__btnprev {
+    top: 10px;
+    right: 59px;
+  }
+  &__btnnext {
+    right: 12px;
+    top: 10px;
+  }
+  .btn {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+  &__col {
+    border-radius: 6px;
+    background-color: var(--color-light);
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.09);
+  }
+
+  &__news {
+    margin-top: 50px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+    }
+    &-bottom {
+      padding: 15px 37px 16px 39px;
+      @include media-breakpoint-down(md) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .p2 {
+        color: var(--color-gray);
+        margin-bottom: 14px !important;
+      }
+    }
+    &-title {
+      font-size: 18px;
+      letter-spacing: -0.18px;
+      line-height: 25px;
+      font-weight: 800;
+      background-color: #f3f3f3;
+      padding-left: 40px;
+      padding-top: 14px;
+      padding-bottom: 16px;
+      @include media-breakpoint-down(md) {
+        padding-left: 20px;
+      }
+    }
+    &-top {
+      font-size: 12px;
+      letter-spacing: -0.12px;
+      line-height: 14px;
+      color: var(--color-gray);
+      padding-left: 35px;
+      padding-top: 16px;
+      padding-bottom: 14px;
+      @include media-breakpoint-down(md) {
+        padding-left: 20px;
+      }
+    }
+  }
+  &__match {
+    padding-bottom: 16px;
+
+    &-score {
+      font-size: 48px;
+      letter-spacing: -0.48px;
+      line-height: 80%;
+      margin-bottom: 12px;
+      font-weight: 800;
+      text-align: center;
+    }
+    &-period {
+      font-size: 14px;
+      letter-spacing: -0.14px;
+      line-height: 19px;
+      text-align: center;
+      font-weight: 800;
+    }
+    &-text {
+      padding-left: 72px;
+      padding-right: 72px;
+      padding-top: 16px;
+      padding-bottom: 12px;
+      box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.09);
+      font-size: 14px;
+      letter-spacing: -0.14px;
+      line-height: 19px;
+      margin-bottom: 16px;
+      @include media-breakpoint-down(md) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+    &-time {
+      font-size: 12px;
+      letter-spacing: -0.12px;
+      line-height: 16px;
+      font-weight: 800;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 8px;
+    }
+    &-logo {
+      text-align: center;
+
+      img {
+        width: 80%;
+      }
+    }
+    &-team {
+      font-size: 24px;
+      letter-spacing: 0.03px;
+      line-height: 33px;
+      font-weight: 800;
+      text-transform: uppercase;
+      &--home {
+        text-align: right;
+      }
+    }
+    &-date {
+      padding-top: 13px;
+      padding-bottom: 15px;
+    }
+  }
+  &__table {
+    margin-top: 50px;
+    @include media-breakpoint-down(md) {
+      margin-top: 0;
+    }
+    &-box {
+      padding-bottom: 16px;
+    }
+    &-respons {
+      margin-bottom: 16px;
+    }
+    th {
+      font-size: 10px;
+      letter-spacing: -0.1px;
+      line-height: 12px;
+      color: var(--color-gray);
+      padding-top: 5px;
+      padding-bottom: 0;
+      font-weight: 400;
+    }
+    td {
+      font-size: 14px;
+      letter-spacing: -0.14px;
+      line-height: 19px;
+      font-weight: 800;
+      text-align: center;
+      padding-left: 8px;
+      padding-right: 8px;
+      padding-top: 14px;
+      padding-bottom: 14px;
+      &:first-child {
+        font-size: 18px;
+        letter-spacing: -0.18px;
+        line-height: 25px;
+        padding-left: 16px;
+      }
+      img {
+        width: 24px;
+        object-fit: contain;
+      }
+    }
+    tr:first-child td {
+      padding-top: 0;
+    }
+    tr:nth-child(even) {
+      background-color: #f3f3f3;
+    }
+  }
+}

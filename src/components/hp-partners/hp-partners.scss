@@ -1,0 +1,199 @@
+.hp-partners {
+  margin-bottom: 60px;
+  &__info {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    .btn {
+      background-color: #f3f3f3;
+      font-size: 12px;
+      letter-spacing: -0.02px;
+      line-height: 14px;
+      text-align: center;
+      color: var(--color-gray);
+      max-width: 80px !important;
+      height: 22px !important;
+      width: 100%;
+      margin: 0 !important;
+    }
+  }
+  &__img {
+    background-color: #f3f3f3;
+    border-radius: 6px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      object-fit: contain;
+      margin: 0 auto;
+      height: 90px;
+    }
+  }
+  &__item {
+    padding: 8px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.08);
+  }
+  .btn {
+    margin: 0 auto;
+    max-width: 285px;
+    height: 60px;
+  }
+  &__title {
+    margin-bottom: 80px;
+  }
+}
+.accordion {
+  margin-bottom: 40px;
+}
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+.accordion-header {
+  box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 6px;
+  background-color: var(--color-light);
+  cursor: pointer;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: -0.18px;
+  line-height: 25px;
+  font-weight: 800;
+  padding: 31px 52px 34px 51px;
+  @include media-breakpoint-down(md) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 16px;
+  }
+}
+.accordion-body .accordion-header {
+  font-size: 14px;
+  letter-spacing: -0.14px;
+  line-height: 19px;
+  font-weight: 800;
+}
+.accordion__item {
+  margin-bottom: 10px;
+}
+.accordion-header:hover {
+  color: var(--color-primary);
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: transparent;
+  display: none;
+
+  margin-top: 10px;
+  &--main {
+    margin-top: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    @include media-breakpoint-down(md) {
+      margin-top: 24px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+}
+.accordion-body .accordion-header:after {
+  content: "+";
+  font-size: 32px;
+  width: 20px;
+  height: 20px;
+  float: right;
+  font-weight: 400;
+  position: relative;
+  top: 6px;
+  transition: 0.3s all;
+  transform: rotate(0deg);
+  @include media-breakpoint-down(md) {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  background-color: var(--color-light);
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion__item > .accordion-header--main:after {
+  content: "";
+  background-image: url("../images/ico/down-black.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  float: right;
+  position: relative;
+  top: 6px;
+  transition: 0.3s all;
+  transform: rotate(0deg);
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item.active .accordion-header--main {
+  color: var(--color-primary);
+}
+.hp-partners__hotel {
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include media-breakpoint-down(lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.hp-partners__restaurant {
+  background-color: var(--color-light);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 120px;
+  padding-right: 120px;
+  @include media-breakpoint-down(lg) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul {
+    margin-bottom: 24px;
+    li {
+      font-size: 18px;
+      letter-spacing: -0.18px;
+      line-height: 25px;
+      font-weight: 800;
+    }
+  }
+  &-logo {
+    width: 280px;
+    margin: 0 auto 32px;
+    img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+iframe {
+  margin: 32px auto;
+  width: 100%;
+  display: block;
+  @include media-breakpoint-down(sm) {
+    height: auto !important;
+    min-height: 220px;
+  }
+}

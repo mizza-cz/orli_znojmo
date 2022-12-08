@@ -1,0 +1,123 @@
+.hp-fanshop {
+  margin-top: 110px;
+  margin-bottom: 38px;
+  &__btn {
+    position: absolute;
+    background-color: var(--color-light);
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.09);
+    width: 54px;
+    height: 54px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 28%;
+    cursor: pointer;
+    z-index: 10;
+    img {
+      width: 16px;
+      height: 26px;
+      object-fit: contain;
+    }
+  }
+  &__btnprev {
+    left: -65px;
+    @media (max-width: 1580px) {
+      left: -16px;
+    }
+  }
+  &__btnnext {
+    right: -65px;
+    @media (max-width: 1580px) {
+      right: -16px;
+    }
+  }
+  .btn {
+    max-width: 343px;
+    margin: 0 auto;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    height: 60px;
+    font-size: 16px;
+    letter-spacing: 0.07px;
+    line-height: 21px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/ico/down-black.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 50px;
+      top: 24px;
+      height: 12px;
+      width: 14px;
+      transform: rotate(-90deg);
+    }
+  }
+  &__slider {
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-top: 92px;
+    margin-bottom: 75px;
+    @media (max-width: 1580px) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+  &__col {
+    padding: 0 6px;
+  }
+  &__item {
+    text-decoration: none;
+    &:hover {
+      .hp-fanshop__item-wrap {
+        background-color: var(--color-primary) !important;
+        color: var(--color-light) !important;
+      }
+      .btn {
+        background-color: var(--color-primary) !important;
+        color: var(--color-light) !important;
+        &::before {
+          background-image: url("../images/ico/down-white.svg");
+        }
+      }
+    }
+  }
+  &__item-wrap {
+    margin-bottom: 50px;
+    border-radius: 6px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 20px;
+    height: 310px;
+    transition: all 0.3s;
+    @media only screen and (max-width: 1340px) and (min-width: 1200px) {
+      height: 22rem;
+    }
+    @media only screen and (max-width: 1200px) and (min-width: 1101px) {
+      height: 21rem;
+    }
+    @media (max-width: 1100px) {
+      height: auto;
+    }
+  }
+  &__item-club {
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    line-height: 17px;
+    margin-bottom: 4px;
+  }
+  &__item-img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: -20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
