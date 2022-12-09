@@ -4,8 +4,6 @@
   &__top {
     border-radius: 12px;
     background: linear-gradient(214.45deg, #ff1522 0%, #ff0046 100%);
-    padding-left: 32px;
-    padding-right: 32px;
   }
 }
 .period {
@@ -28,6 +26,13 @@
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 16px;
+  &__logo {
+    text-align: center;
+    line-height: 0;
+    img {
+      width: 80%;
+    }
+  }
   &__category {
     position: absolute;
     left: 40px;
@@ -87,6 +92,9 @@
   }
 }
 .match-detail__list {
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 12px;
   background: linear-gradient(214.45deg, #ff1522 0%, #ff0046 100%);
 }
 .game__timeline {
@@ -125,7 +133,7 @@
   border-bottom: 0;
 }
 .game__timeline__period {
-  height: 46px;
+  height: 40px;
   position: relative;
   border-bottom: 1px solid #fff;
 }
@@ -174,10 +182,147 @@
 }
 
 .match-content {
+  .item-list__item {
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    &:last-child {
+      border-bottom: none;
+    }
+    .h6 {
+      font-weight: 400;
+    }
+  }
+  .item-list__label {
+    font-size: 20px;
+    color: var(--color-dark);
+    margin-bottom: 16px;
+  }
+  .tabs {
+    @include media-breakpoint-down(sm) {
+      padding: 0;
+    }
+  }
+  .menu-section__links li {
+    @include media-breakpoint-only(md) {
+      max-width: 33.333%;
+      flex: 0 0 33.333%;
+      margin-bottom: 24px;
+    }
+    @include media-breakpoint-only(sm) {
+      max-width: 33.333%;
+      flex: 0 0 33.333%;
+      margin-bottom: 24px;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 50%;
+      flex: 0 0 50%;
+      margin-bottom: 24px;
+    }
+  }
+  &__statistics {
+    border-radius: 12px;
+    background-color: var(--color-light);
+    padding: 32px 0;
+    thead {
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30px;
+        background-color: #f3f3f3;
+        height: 100%;
+        margin-left: -24px;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        background-color: #f3f3f3;
+        height: 100%;
+        margin-right: -24px;
+      }
+    }
+    .table-responsive {
+      padding: 0 24px;
+      margin-bottom: 32px;
+    }
+
+    .h3 {
+      padding-left: 60px;
+      @include media-breakpoint-down(md) {
+        padding-left: 20px;
+      }
+    }
+    th {
+      background-color: #f3f3f3;
+      text-transform: uppercase;
+      font-weight: 800;
+      font-size: 14px;
+      min-width: 72px;
+      text-align: center;
+      white-space: nowrap;
+      &:first-child {
+        text-align: left;
+        padding-left: 36px;
+        width: 82px;
+        @include media-breakpoint-down(md) {
+          padding-left: 16px;
+          width: auto;
+        }
+      }
+      &:nth-child(2) {
+        width: 100%;
+        text-align: left;
+      }
+    }
+    td {
+      white-space: nowrap;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: -0.14px;
+      color: var(--color-gray);
+      font-weight: 800;
+      border-bottom: 1px solid #d8d8d8;
+      padding-left: 8px;
+      padding-right: 8px;
+      min-width: 72px;
+      padding-top: 10px;
+      padding-bottom: 8px;
+      &:first-child {
+        text-align: left;
+        padding-left: 36px;
+        width: 82px;
+        @include media-breakpoint-down(md) {
+          padding-left: 16px;
+          width: auto;
+        }
+      }
+      &:nth-child(2) {
+        width: 100%;
+        text-align: left;
+      }
+      a {
+        color: var(--color-dark);
+        text-decoration-color: transparent;
+        transition: all 0.3s;
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
+    }
+  }
   &__wrapper {
     padding: 40px 60px;
     border-radius: 12px;
     background-color: var(--color-light);
+    @include media-breakpoint-down(sm) {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
   }
   .tabs {
     padding: 0 24px;

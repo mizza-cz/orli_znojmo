@@ -7,7 +7,7 @@
   }
   li {
     padding: 0 13px;
-    .tab {
+    a {
       border-radius: 6px;
       background-color: var(--color-light);
       display: flex;
@@ -122,9 +122,6 @@
     th:first-child,
     td:first-child {
       padding-left: 40px;
-    }
-    th:last-child,
-    td:last-child {
     }
     td:last-child {
       font-size: 14px;

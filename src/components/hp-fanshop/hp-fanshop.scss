@@ -1,6 +1,28 @@
 .hp-fanshop {
   margin-top: 110px;
   margin-bottom: 38px;
+  .btn {
+    max-width: 343px;
+    margin: 0 auto;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    height: 60px;
+    font-size: 16px;
+    letter-spacing: 0.07px;
+    line-height: 21px;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../images/ico/down-black.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: 50px;
+      top: 24px;
+      height: 12px;
+      width: 14px;
+      transform: rotate(-90deg);
+    }
+  }
   &__btn {
     position: absolute;
     background-color: var(--color-light);
@@ -34,28 +56,7 @@
       right: -16px;
     }
   }
-  .btn {
-    max-width: 343px;
-    margin: 0 auto;
-    background-color: var(--color-light);
-    color: var(--color-dark);
-    height: 60px;
-    font-size: 16px;
-    letter-spacing: 0.07px;
-    line-height: 21px;
-    &::before {
-      content: "";
-      position: absolute;
-      background-image: url("../images/ico/down-black.svg");
-      background-repeat: no-repeat;
-      background-size: contain;
-      right: 50px;
-      top: 24px;
-      height: 12px;
-      width: 14px;
-      transform: rotate(-90deg);
-    }
-  }
+
   &__slider {
     margin-left: -6px;
     margin-right: -6px;
@@ -64,6 +65,9 @@
     @media (max-width: 1580px) {
       padding-left: 16px;
       padding-right: 16px;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
     }
   }
   &__col {

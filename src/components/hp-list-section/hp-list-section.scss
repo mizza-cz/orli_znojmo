@@ -1,16 +1,20 @@
 .hp-list {
   &-section {
     padding-top: 120px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
     @include media-breakpoint-down(lg) {
+      padding-bottom: 60px;
     }
 
     .btn {
       max-width: 343px;
       height: 60px;
     }
-    &__inner {
-      margin-bottom: 120px;
+    &__inner + &__inner {
+      margin-top: 120px;
+      @include media-breakpoint-down(lg) {
+        margin-top: 60px;
+      }
     }
   }
 

@@ -167,7 +167,7 @@
     <div class="tabs-wrapper">
       <ul class="tabs menu-section__links">
         <li>
-          <a href="#" class="tab active" data-id="1">O REPORTÁŽ</a>
+          <a href="#" class="tab" data-id="1">O REPORTÁŽ</a>
         </li>
         <li>
           <a href="#" class="tab" data-id="2">VIDEO ZÁZNAM</a>
@@ -176,18 +176,20 @@
           <a href="#" class="tab" data-id="3">ROZHOVOR</a>
         </li>
         <li>
-          <a href="#" class="tab" data-id="4">STATISTIKY HRÁČŮ</a>
+          <a href="#" class="tab active" data-id="4">STATISTIKY HRÁČŮ</a>
         </li>
         <li>
           <a href="#" class="tab"> FOTOGALERIE </a>
         </li>
         <li>
-          <a href="#" class="tab">ONLINE</a>
+          <a target="_blank" href="https://www.onlajny.com/match/index/id/386592" class=" "
+            >ONLINE</a
+          >
         </li>
       </ul>
-      <div class="row">
+      <div class="row g-10">
         <div class="col-xl-8">
-          <div class="tab-content tab-active" id="1">
+          <div class="tab-content" id="1">
             <div class="match-content__wrapper mb-10">
               <h2 class="h1 mb-4 text-primary">
                 Výpadek v první třetině stál Znojmo zápas
@@ -251,166 +253,348 @@
               {% include "@components/post/post.twig" %}
             </div>
           </div>
-          <div class="tab-content" id="4">
-            <div class="o-content">
-              <h3 class="pl-10 mb-8">POSLEDNÍCH 5 ZÁPASŮ</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>DATUM</th>
-                    <th>UTKÁNÍ</th>
-                    <th>SKÓRÉ</th>
-                    <th>MIN</th>
-                    <th>STŘ</th>
-                    <th>INK</th>
-                    <th>ZÁS</th>
-                    <th>ÚSP</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>01. 02. 2022</td>
-                    <td class="text-dark">Salzburg vs Znojmo</td>
-                    <td>
-                      <a class="score win" href="#"> 3:1 </a>
-                    </td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>94,92</td>
-                  </tr>
-                  <tr>
-                    <td>01. 02. 2022</td>
-                    <td class="text-dark">Salzburg vs Znojmo</td>
-                    <td>
-                      <a class="score win" href="#"> 3:1 </a>
-                    </td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>94,92</td>
-                  </tr>
-                  <tr>
-                    <td>01. 02. 2022</td>
-                    <td class="text-dark">Salzburg vs Znojmo</td>
-                    <td>
-                      <a class="score win" href="#"> 3:1 </a>
-                    </td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>94,92</td>
-                  </tr>
-                  <tr>
-                    <td>01. 02. 2022</td>
-                    <td class="text-dark">Salzburg vs Znojmo</td>
-                    <td>
-                      <a class="score lose" href="#"> 3:1 </a>
-                    </td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>94,92</td>
-                  </tr>
-                  <tr>
-                    <td>01. 02. 2022</td>
-                    <td class="text-dark">Salzburg vs Znojmo</td>
-                    <td>
-                      <a class="score win" href="#"> 3:1 </a>
-                    </td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>59</td>
-                    <td>94,92</td>
-                  </tr>
-                </tbody>
-              </table>
-              <a href="#" class="btn btn-dark w-100">CELKOVÉ STATISTIKY</a>
-              <h3 class="pl-10 mb-8">STATISTIKY</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>SEZÓNA</th>
-                    <th>ZÁP</th>
-                    <th>MIN</th>
-                    <th>STŘ</th>
-                    <th>INK</th>
-                    <th>ZÁS</th>
-                    <th>PRŮ</th>
-                    <th>ČK</th>
-                    <th>TMIN</th>
-                    <th>ÚSP</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="text-dark">ICE Hockey League 2021/2022</td>
-                    <td>12</td>
-                    <td>Chance liga</td>
-                    <td>SCM vs SLA</td>
-                    <td>0:1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>12</td>
-                    <td>24</td>
-                    <td>85,71</td>
-                  </tr>
+          <div class="tab-content" id="3">
+            <div class="match-content__wrapper mb-10">
+              <h2 class="h1 mb-4 text-primary">
+                Lukáš Adámek: Nejdůležitější je jít zápas od zápasu
+              </h2>
+              <div class="perex mb-10">
+                V tabulce bodování mu patří horní příčky i přes jeho mladý věk.
+                Dvacetiletý útočník Lukáš Adámek zaznamenal druhý hattrick v
+                sezóně. A to proti týmu, jehož dres oblékal v mládežnickém
+                hokeji.
+              </div>
+              <div class="item-list__wrap">
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+                <div class="item-list__item">
+                  <div class="item-list__label">
+                    Po prohře s Kopřivnicí to bylo takové hledání, je ta
+                    potřebná jiskra zpět?
+                  </div>
+                  <div class="h6">
+                    Po tom prohraném zápase jsme si v kabině řekli nějaké
+                    negativní věci, které bylo potřeba odstranit, a to se nám
+                    snad už povedlo. Dnešní vítězství nám určitě hodně pomůže
+                    vrátit se na naši herní pohodu. Další těžký zápas, po prohře
+                    s Kopřivnicí, byl v Opavě. To bylo takové temnější období,
+                    ale teď už jsme zpátky tam, kde jsme byli předtím.
+                  </div>
+                </div>
+              </div>
 
-                  <tr>
-                    <td class="text-dark">ICE Hockey League 2021/2022</td>
-                    <td>12</td>
-                    <td>Chance liga</td>
-                    <td>SCM vs SLA</td>
-                    <td>0:1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>12</td>
-                    <td>24</td>
-                    <td>85,71</td>
-                  </tr>
-                  <tr>
-                    <td class="text-dark">ICE Hockey League 2021/2022</td>
-                    <td>12</td>
-                    <td>Chance liga</td>
-                    <td>SCM vs SLA</td>
-                    <td>0:1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>12</td>
-                    <td>24</td>
-                    <td>85,71</td>
-                  </tr>
-                  <tr>
-                    <td class="text-dark">ICE Hockey League 2021/2022</td>
-                    <td>12</td>
-                    <td>Chance liga</td>
-                    <td>SCM vs SLA</td>
-                    <td>0:1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>12</td>
-                    <td>24</td>
-                    <td>85,71</td>
-                  </tr>
-                  <tr>
-                    <td class="text-dark">ICE Hockey League 2021/2022</td>
-                    <td>12</td>
-                    <td>Chance liga</td>
-                    <td>SCM vs SLA</td>
-                    <td>0:1</td>
-                    <td>1</td>
-                    <td>2</td>
-                    <td>12</td>
-                    <td>24</td>
-                    <td>85,71</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="article-section__footer">
+                <div class="article-section__author">
+                  <span>AUTOR:</span> Lukáš peroutka
+                </div>
+                <a
+                  href="https://twitter.com/share?http://localhost:3000/03.0_article.html"
+                  class="article-section__tweet customer share"
+                >
+                  {% include "@images/twitter-light.svg" %}
+                  <span>Tweet</span>
+                </a>
+              </div>
+            </div>
+            <div class="article-section__post">
+              <h2 class="h3">SOUVISEJÍCÍ ČLÁNKY</h2>
+              {% include "@components/post/post.twig" %}
+            </div>
+          </div>
+          <div class="tab-content tab-active" id="4">
+            <div class="match-content__statistics">
+              <div class="o-content">
+                <h3 class="mb-8 h3">STATISTIKY HRÁČŮ</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ČÍSLO</th>
+                      <th>JMÉNO</th>
+                      <th>G</th>
+                      <th>a</th>
+                      <th>STŘ</th>
+                      <th>b</th>
+                      <th>+/-</th>
+                      <th>tm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>45</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>45</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <h3 class="mb-8 h3">STATISTIKY BRANKÁŘŮ</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>ČÍSLO</th>
+                      <th>JMÉNO</th>
+                      <th>MIN</th>
+                      <th>STŘ</th>
+                      <th>INK</th>
+                      <th>ZÁS</th>
+                      <th>ÚSP</th>
+                      <th>a</th>
+                      <th>tm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>45</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                      <td>9</td>
+                    </tr>
+                    <tr>
+                      <td>45</td>
+                      <td>
+                        <a href="#">Sebastian Gorčík</a>
+                      </td>
+                      <td>4</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>9</td>
+                      <td>5</td>
+                      <td>-3</td>
+                      <td>9</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="#" class="btn btn-dark w-100">CELKOVÉ STATISTIKY</a>
+              </div>
             </div>
           </div>
         </div>
