@@ -9,6 +9,10 @@
     .btn {
       max-width: 343px;
       height: 60px;
+      &:hover {
+        color: var(--color-dark);
+        background-color: var(--color-primary);
+      }
     }
     &__inner + &__inner {
       margin-top: 120px;

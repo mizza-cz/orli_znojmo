@@ -37,6 +37,10 @@
   width: fit-content;
   display: block;
   min-width: 440px;
+  @include media-breakpoint-down(md) {
+    min-width: auto;
+    width: 100%;
+  }
 }
 .team-section__title {
   margin-top: 51px;
@@ -54,6 +58,13 @@
   background-color: var(--color-light);
   text-decoration: none;
   border-radius: 12px;
+  transition: all 0.3s;
+  &:hover {
+    transform: scale(1.05);
+    @media (max-width: 460px) {
+      transform: none;
+    }
+  }
   @media (max-width: 460px) {
     flex-direction: column;
   }

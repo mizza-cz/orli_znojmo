@@ -31,6 +31,9 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 24px;
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
   }
   &__col {
     max-width: 14.28%;

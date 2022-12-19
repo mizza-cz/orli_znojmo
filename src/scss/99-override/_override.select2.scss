@@ -61,7 +61,7 @@
   width: 24px;
   @include media-breakpoint-down(lg) {
     right: 16px;
-    top: -4px;
+    top: 4px;
   }
   b {
     background-image: url("../images/ico/down-black.svg");

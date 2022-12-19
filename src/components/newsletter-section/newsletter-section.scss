@@ -13,6 +13,9 @@
     padding-left: 61px;
     text-transform: uppercase;
     margin-bottom: 4px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 32px;
+    }
   }
   &__form {
     margin-bottom: 40px;

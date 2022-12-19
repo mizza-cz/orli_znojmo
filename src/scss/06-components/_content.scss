@@ -58,6 +58,12 @@
   img {
     margin: 0 auto 24px;
   }
+  h4 {
+    margin-bottom: 24px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 16px;
+    }
+  }
   h5 {
     color: var(--color-primary);
     margin-bottom: 24px;
@@ -146,11 +152,9 @@
   font-weight: 800;
 }
 
-
 .p2 {
   font-size: 14px;
   letter-spacing: -0.14px;
-  line-height: 19px;
 }
 .p3 {
   font-size: 12px;

@@ -77,4 +77,9 @@
 .mb-5 {
   margin-bottom: 20px !important;
 }
+.bs-tooltip-top {
+  .tooltip-inner {
+    margin-bottom: 4px;
+  }
+}
 /*! purgecss end ignore */
