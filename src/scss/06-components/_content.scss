@@ -7,6 +7,7 @@
       position: relative;
       padding-left: 24px;
       margin-bottom: 16px;
+      font-family: neue-haas-unica, arial;
       &::before {
         content: "";
         background-color: var(--color-primary);
@@ -37,6 +38,7 @@
       position: relative;
       padding-left: 32px;
       margin-bottom: 16px;
+      font-family: neue-haas-unica, arial;
       &::before {
         content: counter(item) ")";
         color: var(--color-primary);
@@ -151,24 +153,30 @@
   line-height: 20px;
   font-weight: 800;
 }
-
+p {
+  font-family: neue-haas-unica, arial;
+}
 .p2 {
   font-size: 14px;
   letter-spacing: -0.14px;
+  font-family: neue-haas-unica, arial;
 }
 .p3 {
   font-size: 12px;
   letter-spacing: -0.12px;
   line-height: 16px;
+  font-family: neue-haas-unica, arial;
 }
 .p4 {
   font-size: 10px;
   letter-spacing: -0.1px;
   line-height: 12px;
+  font-family: neue-haas-unica, arial;
 }
 .perex {
   font-size: 21px;
   letter-spacing: 0.02px;
   line-height: 29px;
   font-weight: 800;
+  font-family: neue-haas-unica, arial;
 }
