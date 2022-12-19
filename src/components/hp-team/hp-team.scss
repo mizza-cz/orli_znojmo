@@ -9,11 +9,11 @@
     margin-bottom: 60px;
     margin-left: -16px;
     display: flex;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+    // flex-wrap: nowrap;
+    // overflow-x: scroll;
+    // &::-webkit-scrollbar {
+    //   display: none;
+    // }
   }
   &__content {
     padding-right: 36px;
