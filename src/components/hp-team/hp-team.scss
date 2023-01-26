@@ -5,10 +5,49 @@
   @include media-breakpoint-down(lg) {
     padding-bottom: 120px;
   }
+  .slick-dots {
+    width: 100%;
+  }
+  &__btn {
+    position: absolute;
+    background-color: var(--color-light);
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.09);
+
+    width: 54px;
+    height: 54px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 34%;
+    cursor: pointer;
+    z-index: 10;
+    img {
+      width: 16px;
+      height: 26px;
+      object-fit: contain;
+    }
+  }
+  &__btnprev {
+    left: -65px;
+    @media (max-width: 1580px) {
+      left: 16px;
+      top: -20px;
+    }
+  }
+  &__btnnext {
+    right: -65px;
+    @media (max-width: 1580px) {
+      left: 32px;
+    }
+  }
   &__inner {
-    margin-bottom: 60px;
+    margin-bottom: 24px;
     margin-left: -16px;
     display: flex;
+    flex-wrap: wrap;
   }
   &__content {
     padding-right: 36px;
