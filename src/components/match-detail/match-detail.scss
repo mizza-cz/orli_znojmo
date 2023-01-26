@@ -58,7 +58,9 @@
     line-height: 20px;
     text-align: center;
     font-weight: 800;
-    margin-bottom: 10px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 20px;
+    }
   }
   &__score {
     font-size: 144px;
@@ -66,10 +68,9 @@
     line-height: 60%;
     text-align: center;
     font-weight: 800;
-    margin-bottom: 32px;
+    line-height: 100%;
     @include media-breakpoint-down(lg) {
       font-size: 80px;
-      margin-top: 24px;
       letter-spacing: -0.2px;
     }
   }
