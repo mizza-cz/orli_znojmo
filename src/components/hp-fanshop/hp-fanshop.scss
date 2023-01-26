@@ -11,6 +11,7 @@
     letter-spacing: 0.07px;
     line-height: 21px;
     &:hover {
+      background-color: var(--color-primary);
       &::before {
         background-image: url("../images/ico/down-white.svg");
       }
@@ -44,10 +45,20 @@
     top: 28%;
     cursor: pointer;
     z-index: 10;
-    img {
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--color-primary);
+      g {
+        fill: var(--color-light);
+      }
+    }
+    svg {
       width: 16px;
       height: 26px;
       object-fit: contain;
+      g {
+        transition: all 0.1s;
+      }
     }
   }
   &__btnprev {
