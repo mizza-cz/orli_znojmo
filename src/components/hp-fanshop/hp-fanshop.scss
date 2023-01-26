@@ -10,6 +10,11 @@
     font-size: 16px;
     letter-spacing: 0.07px;
     line-height: 21px;
+    &:hover {
+      &::before {
+        background-image: url("../images/ico/down-white.svg");
+      }
+    }
     &::before {
       content: "";
       position: absolute;
@@ -21,6 +26,7 @@
       height: 12px;
       width: 14px;
       transform: rotate(-90deg);
+      transition: all 0.3s;
     }
   }
   &__btn {

@@ -173,9 +173,10 @@
   text-decoration: none;
   display: inline-block;
   position: relative;
+  transition: all 0.3s;
 }
 .scoreboard__link a:hover {
-  text-decoration: underline;
+  color: var(--color-primary);
 }
 
 .scoreboard__link a:first-child {

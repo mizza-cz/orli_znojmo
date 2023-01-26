@@ -16,12 +16,23 @@
     align-items: center;
     justify-content: center;
     top: 34%;
+    transition: all 0.3s;
     cursor: pointer;
     z-index: 10;
-    img {
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-color: var(--color-primary);
+      svg g {
+        fill: #fff;
+      }
+    }
+    svg {
       width: 11px;
       height: 19px;
       object-fit: contain;
+      g {
+      }
     }
   }
   &__btnprev {

@@ -26,11 +26,18 @@
   align-items: center;
   justify-content: center;
   transition: all 0.3s;
+  &:hover {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+  }
 }
 .btn-dark {
   background-color: var(--color-dark);
   color: var(--color-light) !important;
   text-decoration: none !important;
+  &:hover {
+    background-color: var(--color-primary);
+  }
 }
 .btn-light {
   background-color: var(--color-light);

@@ -92,7 +92,7 @@
       height: 54px;
       padding-left: 24px;
       &:hover {
-        text-decoration: underline !important;
+        background-color: var(--color-primary);
       }
       img {
         width: 20px;
