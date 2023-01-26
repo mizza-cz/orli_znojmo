@@ -36,6 +36,7 @@
   background-color: var(--color-dark);
   color: var(--color-light) !important;
   text-decoration: none !important;
+  transition: all 0.3s;
   &:hover {
     background-color: var(--color-primary);
     border-color: var(--color-primary);

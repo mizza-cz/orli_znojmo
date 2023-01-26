@@ -112,11 +112,6 @@
       border-bottom: none;
     }
   }
-  &__item.active {
-    .h6 {
-      color: var(--color-primary);
-    }
-  }
   &__label {
     color: var(--color-gray);
     font-size: 14px;
@@ -132,7 +127,7 @@
     line-height: 19px;
     display: block;
     &:hover {
-      text-decoration-color: inherit;
+      color: var(--color-primary);
     }
   }
 }
