@@ -1,7 +1,6 @@
 $("#scoreboard_carousel").slick({
-  infinite: !0,
+  infinite: false,
   arrows: true,
-  autoplay: true,
   slidesToShow: 4,
   slidesToScroll: !0,
   swipeToSlide: !0,
@@ -41,7 +40,6 @@ $("#scoreboard_carousel").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
         arrows: false,
       },
     },
