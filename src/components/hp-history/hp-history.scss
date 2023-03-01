@@ -3,9 +3,67 @@
   @include media-breakpoint-down(xl) {
     margin-bottom: 40px;
   }
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .slick-dots {
+    width: 100%;
+    bottom: 0;
+    margin-top: 32px;
+  }
+  &__btn {
+    position: absolute;
+    background-color: var(--color-light);
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.09);
+
+    width: 54px;
+    height: 54px;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 34%;
+    cursor: pointer;
+    z-index: 10;
+    img {
+      width: 16px;
+      height: 26px;
+      object-fit: contain;
+    }
+  }
+  &__btnprev {
+    left: -65px;
+    @media (max-width: 1580px) {
+      left: 0px;
+    }
+    @media (max-width: 800px) {
+      top: 25%;
+    }
+  }
+  &__btnnext {
+    right: -65px;
+    @media (max-width: 1580px) {
+      right: 0;
+    }
+    @media (max-width: 800px) {
+      top: 25%;
+    }
+  }
   &__item {
-    @include media-breakpoint-down(xl) {
-      margin-bottom: 32px;
+    padding: 0 16px;
+    flex: 0 0 auto;
+    max-width: 1100px;
+    @media (max-width: 1480px) {
+    }
+    @include media-breakpoint-down(xxl) {
+      max-width: 100%;
+      width: 100%;
+    }
+    @media (max-width: 641px) {
+      padding: 0;
     }
   }
   &__info {
@@ -21,6 +79,7 @@
     background-color: var(--color-light);
     border-radius: 6px;
     margin-bottom: 32px;
+    aspect-ratio: 1023/582;
     @include media-breakpoint-down(xl) {
       aspect-ratio: 1160/640;
     }
