@@ -74,10 +74,16 @@
     margin-right: -4px;
     list-style: none;
     margin-left: auto;
+    max-width: 20%;
+    flex: 0 0 20%;
+    justify-content: flex-end;
     @include media-breakpoint-down(xl) {
       width: 100%;
       justify-content: center;
       margin-top: 24px;
+      margin-left: 0;
+      flex: 100%;
+      max-width: 100%;
     }
     li {
       padding: 0 4px;
@@ -127,12 +133,12 @@
     border-radius: 6px;
     background-color: var(--color-light);
     margin-bottom: 12px;
-    padding-left: 40px;
-    padding-right: 40px;
     padding-top: 18px;
     padding-bottom: 16px;
     display: flex;
     align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
     @include media-breakpoint-down(xl) {
       text-align: center;
       flex-wrap: wrap;
@@ -140,24 +146,23 @@
       max-width: 100%;
       flex: 100%;
     }
-    @include media-breakpoint-down(md) {
-      padding-left: 16px;
-      padding-right: 16px;
-    }
   }
   &__date {
     font-size: 14px;
     letter-spacing: -0.02px;
     line-height: 19px;
-    text-align: center;
+    text-align: left;
     font-weight: 800;
     color: #717171;
-    padding-right: 16px;
-    max-width: 200px;
+    max-width: 20%;
+    flex: 0 0 20%;
+    padding: 0 20px;
     @include media-breakpoint-down(xl) {
+      flex: 100%;
       max-width: 100%;
       width: 100%;
-      padding-right: 0;
+      padding: 0;
+      text-align: center;
     }
   }
   &__info {
@@ -165,10 +170,7 @@
     align-items: center;
     max-width: 60%;
     flex: 0 0 60%;
-    padding-left: 260px;
-    @media only screen and (max-width: 1400px) and (min-width: 1200px) {
-      padding-left: 120px;
-    }
+    justify-content: center;
     @include media-breakpoint-down(xl) {
       padding-left: 0;
       flex: 100%;
@@ -176,16 +178,23 @@
       justify-content: center;
       margin-top: 16px;
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       flex-wrap: wrap;
     }
   }
   &__club {
     display: flex;
     align-items: center;
-    @include media-breakpoint-down(sm) {
+    max-width: 35%;
+    flex: 0 0 35%;
+    &:first-of-type {
+      justify-content: flex-end;
+    }
+    @include media-breakpoint-down(md) {
       padding: 0 16px;
       margin-top: 16px;
+      flex: 50%;
+      max-width: 50%;
     }
     &.znojmo {
       color: var(--color-primary);
@@ -199,7 +208,7 @@
       padding: 0 16px;
       display: block;
       font-weight: 800;
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         display: none;
       }
     }
@@ -217,17 +226,25 @@
     text-align: center;
     width: 240px;
     padding: 0 32px;
+    text-align: center;
     text-transform: uppercase;
+    max-width: 30%;
+    flex: 0 0 30%;
     a {
       text-decoration-color: transparent;
       transition: all 0.3s;
+      width: 100%;
+      text-align: center;
+      display: block;
       &:hover {
         text-decoration-color: inherit;
       }
     }
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       width: 100%;
       order: -1;
+      flex: 100%;
+      max-width: 100%;
     }
     span {
       font-size: 14px;
