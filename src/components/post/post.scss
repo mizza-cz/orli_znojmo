@@ -49,8 +49,12 @@
   }
   &__info {
     padding: 38px;
+    max-width: 66%;
+    flex: 0 0 66%;
     @include media-breakpoint-down(lg) {
       padding: 24px 16px 0 16px;
+      flex: 100%;
+      max-width: 100%;
     }
     .h5 {
       margin-bottom: 16px;
@@ -60,15 +64,15 @@
     }
   }
   &__img {
-    max-width: 365px;
-    width: 100%;
-    min-height: 180px;
+    max-width: 34%;
+    flex: 0 0 34%;
     display: block;
+    aspect-ratio: 268/268;
+    height: fit-content;
     @include media-breakpoint-down(lg) {
       max-width: 100%;
       width: 100%;
-
-      aspect-ratio: 365/230;
+      flex: 100%;
     }
     img {
       width: 100%;
