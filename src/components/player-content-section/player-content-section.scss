@@ -44,6 +44,7 @@
     position: relative;
     display: flex;
     align-items: center;
+    aspect-ratio: 260/172;
     &::after {
       content: "";
       position: absolute;
