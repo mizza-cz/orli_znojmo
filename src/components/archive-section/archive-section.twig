@@ -1,0 +1,90 @@
+<section class="archive-section">
+  <div class="bg-white">
+    <div class="container">
+      <div class="matches-section__menu">
+        <form action="" class="menu-section__form">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <label class="o-select menu-section__label">
+                <select class="js-select">
+                  <option>Kategorie</option>
+                  <option value="tipsport">2020/21</option>
+                  <option value="tipsport">2019/20</option>
+                  <option value="tipsport">2018/19</option>
+                  <option value="tipsport">2017/18</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-lg-4">
+              <label class="o-select menu-section__label">
+                <select class="js-select">
+                  <option>Rok</option>
+                  <option value="tipsport">2020/21</option>
+                  <option value="tipsport">2019/20</option>
+                  <option value="tipsport">2018/19</option>
+                  <option value="tipsport">2017/18</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-lg-4">
+              <label class="o-select menu-section__label">
+                <select class="js-select">
+                  <option>Měsíc</option>
+                  <option value="tipsport">2020/21</option>
+                  <option value="tipsport">2019/20</option>
+                  <option value="tipsport">2018/19</option>
+                  <option value="tipsport">2017/18</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-md-8">
+              <label for="">
+                <input type="text" placeholder="Hledaný text" />
+              </label>
+            </div>
+            <div class="col-md-4">
+              <button class="btn">vyhledat</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-xl-8">
+        <div class="archive-section__wrapper">
+          {% include "@components/post/post.twig" %} {% include
+          "@components/post/post.twig" %} {% include
+          "@components/post/post.twig" %} {% include
+          "@components/post/post.twig" %} {% include
+          "@components/post/post.twig" %} {% include
+          "@components/post/post.twig" %} {% include
+          "@components/post/post.twig" %}
+          <nav aria-label="Další stránky">
+            <ul
+              class="pagination d-flex flex-wrap pagination-flat pagination-success"
+            >
+              <li class="page-item active">
+                <a class="page-link" href="#" data-abc="true">1</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" data-abc="true">2</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" data-abc="true">3</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" data-abc="true">4</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" href="#" data-abc="true"> »</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      {% include "@components/aside/aside-article.twig" %}
+    </div>
+  </div>
+</section>
