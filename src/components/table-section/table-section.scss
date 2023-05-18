@@ -1,0 +1,9 @@
+.table-section {
+  margin-bottom: 28px;
+  @include media-breakpoint-down(lg) {
+    .matches-section__menu-list li {
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+  }
+}
