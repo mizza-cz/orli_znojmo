@@ -1,0 +1,17 @@
+{% extends "@components/base/base.twig" %} {% set title = "11.0_photogallery" %}
+{% block main %}
+
+<div
+  class="top-section page"
+  style="background-image: url('../build/images/content/clanek.jpeg')"
+>
+  <div class="container">
+    <div class="page__header">
+      <div class="page__header-categ">Fotogalerie</div>
+      <h1 class="h1">Fotogalerie 2022/23</h1>
+    </div>
+    
+  </div>
+  
+</div>
+{% include "@components/photogallery-section/photogallery-section.twig" %} {% endblock %}
