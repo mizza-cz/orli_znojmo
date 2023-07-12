@@ -48,16 +48,25 @@
     }
   }
   &__info {
-    padding: 38px;
+    padding: 0px 32px;
     max-width: 66%;
     flex: 0 0 66%;
     @include media-breakpoint-down(lg) {
-      padding: 24px 16px 0 16px;
+      padding: 16px 12px 0 12px;
       flex: 100%;
       max-width: 100%;
     }
-    .h5 {
+    .h3 {
       margin-bottom: 16px;
+      color: var(--color-dark);
+      line-height: 125%;
+      a {
+        transition: all 0.3s;
+        text-decoration-color: transparent;
+        &:hover {
+          text-decoration-color: inherit;
+        }
+      }
     }
     .p2 {
       margin-bottom: 16px;
