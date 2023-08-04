@@ -1,4 +1,60 @@
 .o-content {
+  th {
+    background-color: #f3f3f3;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 14px;
+    min-width: 72px;
+    text-align: center;
+    white-space: nowrap;
+    &:first-child {
+      text-align: left;
+      padding-left: 36px;
+      width: 82px;
+      @include media-breakpoint-down(md) {
+        padding-left: 16px;
+        width: auto;
+      }
+    }
+    &:nth-child(2) {
+      width: 100%;
+      text-align: left;
+    }
+  }
+  td {
+    white-space: nowrap;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    color: var(--color-gray);
+    font-weight: 800;
+    border-bottom: 1px solid #d8d8d8;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 72px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    &:first-child {
+      text-align: left;
+      padding-left: 16px;
+      width: auto;
+      padding-right: 16px;
+      background-color: #f3f3f3;
+      @include media-breakpoint-down(md) {
+      }
+    }
+    &:nth-child(2) {
+      width: 100%;
+      text-align: left;
+    }
+    a {
+      color: var(--color-dark);
+      text-decoration-color: transparent;
+      transition: all 0.3s;
+      &:hover {
+        text-decoration-color: inherit;
+      }
+    }
+  }
   ul {
     font-size: 16px;
     line-height: 23px;
