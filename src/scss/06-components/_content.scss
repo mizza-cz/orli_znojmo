@@ -1,5 +1,10 @@
 .o-content {
+  .item {
+    width: 220px;
+    background-color: #f3f3f3;
+  }
   table {
+    margin-bottom: 40px;
     @include media-breakpoint-down(md) {
       width: 732px;
     }
@@ -10,20 +15,10 @@
     font-weight: 800;
     font-size: 14px;
     min-width: 72px;
-    text-align: center;
     white-space: nowrap;
-    &:first-child {
-      text-align: left;
-      padding-left: 36px;
-      width: 82px;
-      @include media-breakpoint-down(md) {
-        padding-left: 16px;
-        width: auto;
-      }
-    }
-    &:nth-child(2) {
-      text-align: left;
-    }
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
   }
   td {
     font-size: 14px;
@@ -37,12 +32,6 @@
     padding-top: 10px;
     padding-bottom: 8px;
     &:first-child {
-      white-space: nowrap;
-      text-align: left;
-      padding-left: 16px;
-      width: auto;
-      padding-right: 16px;
-      background-color: #f3f3f3;
     }
     &:nth-child(2) {
       text-align: left;
