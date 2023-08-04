@@ -1,4 +1,9 @@
 .o-content {
+  table {
+    @include media-breakpoint-down(md) {
+      width: 732px;
+    }
+  }
   th {
     background-color: #f3f3f3;
     text-transform: uppercase;
@@ -17,12 +22,10 @@
       }
     }
     &:nth-child(2) {
-      width: 100%;
       text-align: left;
     }
   }
   td {
-    white-space: nowrap;
     font-size: 14px;
     letter-spacing: -0.14px;
     color: var(--color-gray);
@@ -34,16 +37,14 @@
     padding-top: 10px;
     padding-bottom: 8px;
     &:first-child {
+      white-space: nowrap;
       text-align: left;
       padding-left: 16px;
       width: auto;
       padding-right: 16px;
       background-color: #f3f3f3;
-      @include media-breakpoint-down(md) {
-      }
     }
     &:nth-child(2) {
-      width: 100%;
       text-align: left;
     }
     a {
