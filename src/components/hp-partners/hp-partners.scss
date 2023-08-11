@@ -45,7 +45,10 @@
     height: 60px;
   }
   &__title {
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg) {
+      margin-bottom: 32px;
+    }
   }
 }
 .accordion {
