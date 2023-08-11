@@ -40,47 +40,7 @@
   @include media-breakpoint-down(xl) {
     padding-bottom: 0;
   }
-  .gallery a {
-    position: relative;
-    display: flex;
-    align-items: center;
-    aspect-ratio: 260/172;
-    &::after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      opacity: 0;
-      background: var(--color-primary);
-      transition: all 0.3s;
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-size: 80px 80px;
-      background-repeat: no-repeat;
-      background-position: center;
-      left: 0;
-      right: 0;
-      margin: 0 auto;
-      z-index: 1;
-      background-image: url("../images/ico/camera.svg");
-      transition: all 0.3s;
-      opacity: 0;
-    }
-    &:hover {
-      &::before {
-        opacity: 1;
-      }
-      &::after {
-        opacity: 0.5;
-      }
-    }
-  }
+
   .tab-content {
     padding: 40px 28px 28px 21px;
     border-radius: 12px;
@@ -178,4 +138,45 @@
 }
 .lose {
   color: var(--color-primary) !important;
+}
+.gallery a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  aspect-ratio: 260/172;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    background: var(--color-primary);
+    transition: all 0.3s;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: 80px 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 1;
+    background-image: url("../images/ico/camera.svg");
+    transition: all 0.3s;
+    opacity: 0;
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+    &::after {
+      opacity: 0.5;
+    }
+  }
 }
