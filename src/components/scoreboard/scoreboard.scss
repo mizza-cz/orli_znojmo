@@ -60,6 +60,11 @@
   align-items: center;
   justify-self: start;
   background-size: 16px 26px;
+  transition: all 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--color-primary);
+  }
 }
 .scoreboard .slick-next:before,
 .scoreboard .slick-prev:before {
@@ -75,6 +80,12 @@
   @media (max-width: 1600px) {
     left: -46px;
   }
+}
+.scoreboard .slick-prev:hover {
+  background-image: url("../images/ico/left-white.svg");
+}
+.scoreboard .slick-next:hover {
+  background-image: url("../images/ico/right-white.svg");
 }
 .scoreboard .slick-next {
   right: -62px;

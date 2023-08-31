@@ -16,9 +16,18 @@
     align-items: center;
     justify-content: center;
     top: 34%;
+
     cursor: pointer;
     z-index: 10;
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--color-primary);
+      img {
+        filter: grayscale(1) brightness(1000%);
+      }
+    }
     img {
+      transition: all 0.3s;
       width: 16px;
       height: 26px;
       object-fit: contain;
