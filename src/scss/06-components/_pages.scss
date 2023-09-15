@@ -4,6 +4,9 @@
 .hp-page {
   padding-top: 140px;
   margin-bottom: 357px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 32px;
+  }
 }
 .top-section {
   width: 100%;

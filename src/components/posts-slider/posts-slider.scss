@@ -3,6 +3,11 @@
   z-index: 5;
   transform: translateY(50%);
   margin-top: -273px;
+  @include media-breakpoint-down(md) {
+    margin-top: 0;
+    transform: none;
+    padding-bottom: 24px;
+  }
   &__btn {
     position: absolute;
     background-color: var(--color-light);
