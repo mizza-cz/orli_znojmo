@@ -6,12 +6,12 @@ $(".hp-history__inner").slick({
   nextArrow:
     ' <button class="hp-history__btn  hp-history__btnnext"><svg width="8px" height="14px" viewBox="0 0 8 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>Path</title><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="HP-1.5" transform="translate(-873.000000, -4588.000000)" fill="#ff102c" fill-rule="nonzero"><g id="Group-3" transform="translate(100.000000, 4429.500000)"><g id="Group-56" transform="translate(529.000000, 136.000000)"><g id="Group-23-Copy" transform="translate(216.000000, 17.500000)"><polygon id="Path" points="33.172 12 28.222 7.05 29.636 5.636 36 12 29.636 18.364 28.222 16.95"></polygon></g></g></g></g></g</svg></button>',
   slidesToShow: 1,
-  variableWidth: true,
+  // variableWidth: true,
   responsive: [
     {
       breakpoint: 1481,
       settings: {
-        variableWidth: false,
+        // variableWidth: false,
         slidesToScroll: 1,
         slidesToShow: 1,
       },
@@ -19,7 +19,7 @@ $(".hp-history__inner").slick({
     {
       breakpoint: 641,
       settings: {
-        variableWidth: false,
+        // variableWidth: false,
         slidesToScroll: 1,
         slidesToShow: 1,
         arrows: false,
