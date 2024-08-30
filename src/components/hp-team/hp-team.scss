@@ -1,9 +1,9 @@
 .hp-team {
   background: var(--color-light);
-  padding-top: 104px;
-  padding-bottom: 200px;
+  padding-top: 68px;
+  padding-bottom: 68px;
   @include media-breakpoint-down(lg) {
-    padding-bottom: 120px;
+    padding: 40px 0;
   }
   .slick-dots {
     width: 100%;

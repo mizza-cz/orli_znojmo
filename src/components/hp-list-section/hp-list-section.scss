@@ -1,6 +1,6 @@
 .hp-list {
   &-section {
-    padding-top: 120px;
+    padding-top: 68px;
     padding-bottom: 120px;
     margin-bottom: 110px;
     @include media-breakpoint-down(lg) {
@@ -22,7 +22,7 @@
 
   &__ticket {
     position: absolute;
-    top: -30%;
+    top: 0%;
     padding: 0 20px;
     left: 0;
     right: 0;
@@ -42,17 +42,19 @@
       margin-bottom: 32px;
     }
     &-content {
-      max-width: 453px;
+      max-width: 38rem;
       margin: 0 auto;
       text-align: left;
       padding-left: 16px;
       padding-right: 16px;
+      margin-top: 40px;
     }
     &-box {
       position: relative;
       // height: 384px;
       border-radius: 6px;
       aspect-ratio: 701/384;
+      border-top: 120px solid var(--color-primary);
       @include media-breakpoint-down(lg) {
         //   max-width: 700px;
         //   margin: 0 auto;
@@ -66,18 +68,19 @@
       }
     }
     span {
-      font-size: 166px;
-      letter-spacing: -8.3px;
+      font-size: 8.375rem;
+      letter-spacing: -0.51875rem;
       line-height: 0;
       font-weight: 800;
       color: var(--color-light);
       position: absolute;
       left: 0;
       right: 0;
-      top: 50%;
       display: block;
       margin: 0 auto;
       text-align: center;
+      line-height: normal;
+      bottom: 0;
       @media only screen and (max-width: 1200px) and (min-width: 460px) {
         font-size: 120px;
       }
