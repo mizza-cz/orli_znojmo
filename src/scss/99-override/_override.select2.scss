@@ -1,7 +1,8 @@
 /*! purgecss start ignore */
 .select2-container--default
   .select2-results__option--highlighted.select2-results__option--selectable {
-  background-color: var(--color-light);
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 .select2-container {
   .select2-selection--single {

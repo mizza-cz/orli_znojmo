@@ -44,6 +44,7 @@
   width: 32px;
   height: 24px;
   outline: none;
+  cursor: pointer;
   &.is-open {
     background-image: url("../images/ico/menu-close.svg");
   }
